@@ -1,4 +1,4 @@
-import logo from './JuanDiaz.jpg';
+import logo from './Components/JuanDiaz.jpg';
 import { Route, BrowserRouter as Router, Switch, Link } from "react-router-dom";
 import './App.css';
 import Home from "./Components/Home"
