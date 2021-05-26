@@ -1,4 +1,5 @@
 import logo from './JuanDiaz.jpg';
+import { Route, BrowserRouter as Router, Switch, Link } from "react-router-dom";
 import './App.css';
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Check Me Out!
+          Check Me Out! 
         </a>
       </header>
     </div>
