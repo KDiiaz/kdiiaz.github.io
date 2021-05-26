@@ -1,6 +1,10 @@
 import logo from './JuanDiaz.jpg';
 import { Route, BrowserRouter as Router, Switch, Link } from "react-router-dom";
 import './App.css';
+import Home from "./Components/Home"
+import About from "./Components/About"
+import Projects from "./Components/Projects"
+import Contact from "./Components/Contact"
 
 function App() {
   return (
