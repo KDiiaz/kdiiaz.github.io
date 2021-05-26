@@ -20,14 +20,6 @@ const Home = () => {
        >
          Github
        </a>
-       <a
-         className="App-link"
-         href="https://www.instagram.com/d1iaz/"
-         target="_blank"
-         rel="noopener noreferrer"
-       >
-         Instagram
-       </a>
      </header>
    </div>
    );
