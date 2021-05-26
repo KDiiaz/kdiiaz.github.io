@@ -8,23 +8,34 @@ import Contact from "./Components/Contact"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p> My name is Juan Diaz and I'm going to master React!
-        <a
-          className="App-link"
-          href="https://github.com/kdiiaz"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Check Me Out! 
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <nav>
+          <url>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+            <Link to="/about">About</Link>
+            </li>
+            <li>
+            <Link to="/projects">Projects</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact</Link>
+            </li>
+          </url>
+        </nav>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/projects" component={Projects} />
+          <Route path="/contact" component={Contact} />
+  
+        </Switch>
+      </div>
+    </Router>
   );
-}
-
+ }
+ 
 export default App;
